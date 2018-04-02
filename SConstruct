@@ -38,8 +38,6 @@ class Dirs(object):
 	objects = "%s/objs" % build
 	target = "%s/target" % build
 	source = "#src"
-	source_service = os.path.join("#src", "dbl")
-	source_dblclient = os.path.join("#src", "dblclient")
 	source_test = os.path.join("#src", "test")
 	extern_include = os.path.join(os.environ["VIRTUAL_ENV"], "include")
 	project_source = source
@@ -102,10 +100,7 @@ translation_units = {
 
 platform_translation_units = {
 	"linux": {
-		"dbl/config/unix": {},
-		"dbl/service/configurator/unix" : {},
-		"dbl/service/unix" : {},
-		"dbl/service/worker/unix" : {},
+		# "mod/worker/unix" : {},
 	}
 }
 
